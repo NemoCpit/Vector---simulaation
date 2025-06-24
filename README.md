@@ -1,35 +1,45 @@
-import math
+# 🧠 Vector Simulation for AI Learning
 
-# Starting position
-position = [0, 0]
+Welcome to my step-by-step learning journey to become an AI Engineer.  
+This repository contains daily practice in Python with NumPy, focusing on **algebraic data structures** like vectors, scalars, tensors, and their real-world applications in AI.
 
-# Commands: list of vector moves (x, y)
-commands = [
-    [4, 0],    # 4 steps right
-    [0, 2],    # 2 steps up
-    [-1, 0],   # 1 step left
-    [0, -3]    # 3 steps down
-]
+---
 
-# Apply all vector movements
-for move in commands:
-    position[0] += move[0]
-    position[1] += move[1]
+## 📅 Weekly Learning Plan
 
-# Final Position
-print("Final Position Vector:", position)
+| Day        | Topic                             |
+|------------|-----------------------------------|
+| Monday     | Vector Basics (Add, Subtract)     |
+| Tuesday    | Linear Combinations               |
+| Wednesday  | Vector Space & Dimensions         |
+| Thursday   | Tensors (Rank, Shape)             |
+| Friday     | Real-world AI Applications        |
+| Saturday   | Mini Project + GitHub Commit      |
+| Sunday     | Off / Doubt Solving / Review      |
 
-# Total Displacement (Euclidean Norm)
-displacement = math.sqrt(position[0]**2 + position[1]**2)
-print("Total Displacement (Norm):", round(displacement, 2))
+---
 
-# Unit vector (Direction)
-if displacement != 0:
-    unit_vector = [
-        round(position[0] / displacement, 3),
-        round(position[1] / displacement, 3)
-    ]
-else:
-    unit_vector = [0, 0]
+## 📂 Folder Structure
 
-print("Unit Direction Vector:", unit_vector)
+
+---
+
+## 🛠 Tools Used
+
+- [Python 3.13](https://www.python.org/)
+- [NumPy](https://numpy.org/)
+- [GitHub](https://github.com/)
+- [Replit](https://replit.com/)
+
+---
+
+## 🎯 Goal
+
+> Build a strong foundation in algebraic data structures  
+> → Apply them in AI/ML projects  
+> → Build a real-world **AI software** for a Kerala-based news channel — fun, friendly, and local!
+
+---
+
+**👤 Maintained by:** [@NemoCpit](https://github.com/NemoCpit)
+
