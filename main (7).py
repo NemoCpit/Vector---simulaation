@@ -1,0 +1,27 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Vectors
+v1 = np.array([3, 4])
+v2 = np.array([2, 1])
+
+# Projection
+scalar_proj = np.dot(v1, v2) / np.dot(v2, v2)
+proj_v1_on_v2 = scalar_proj * v2
+
+# Plot
+origin = np.array([0, 0])
+plt.quiver(*origin, *v1, angles='xy', scale_units='xy', scale=1, color='blue', label='v1')
+plt.quiver(*origin, *v2, angles='xy', scale_units='xy', scale=1, color='green', label='v2')
+plt.quiver(*origin, *proj_v1_on_v2, angles='xy', scale_units='xy', scale=1, color='red', label='proj(v1 on v2)')
+
+# Settings
+plt.xlim(0, 6)
+plt.ylim(0, 6)
+plt.grid()
+plt.legend()
+plt.title("Projection of v1 onto v2")
+
+# Save or show
+plt.savefig("projection_plot.png")
+plt.show()
